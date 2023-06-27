@@ -113,3 +113,126 @@ body {
     height: 100%;
     object-fit: cover;
   }  
+
+  #contact {
+    background-color: #226b7d;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  
+  #contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #contact input,
+  #contact textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  #contact input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    align-self: flex-start;
+  }
+  
+  #contact input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .music-player {
+    position: fixed;
+    top: calc(100% - 100px);
+    left: 10px;
+    z-index: 9999;
+    background-color: #45a049;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+  }
+
+  .music-player i {
+    margin-right: 10px;
+  }
+
+  .music-player audio {
+    width: 150px;
+  }
+
+  .duracao {
+    width: 200px;
+    margin-top: 25px;
+}
+
+.barra {
+    width: 200px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 4px;
+    width: 0;
+    background-color: #333;
+}
+
+.ponto {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.tempo {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.player {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.botao-play, .botao-pause {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.setas {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botao-pause {
+    display: none;
+}

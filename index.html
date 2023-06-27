@@ -3,12 +3,13 @@
 <head>
   <title>Rádio do Pagode</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <img style="width: 120px;" src="./assets/logoestudio-removebg-preview.png" alt="Logo da Rádio do Pagode">
+        <img style="width: 120px;" src="./assets/logoestudio-removebg-preview.png" alt="">
         <h1>Rádio do Pagode</h1>
       </div>
       <ul class="menu">
@@ -30,16 +31,62 @@
         <li>18:00 - Happy Pagode</li>
         <li>21:00 - Pagode Noturno</li>
         <li class="playlist-image">
-            <img src="https://media.istockphoto.com/id/1297176177/pt/vetorial/hand-drawn-illustration-of-guitar-cuban-tres-hat-and-maracas-tropical-vibe-vacation-concept.jpg?s=612x612&w=0&k=20&c=iksBscAlhSpbNMkJOQNpRlzIQB-zoErg8d7yhEDhRWA=" alt="Imagem de pagode" class="playlist-image__img">
-          </li>
+          <img src="https://media.istockphoto.com/id/1297176177/pt/vetorial/hand-drawn-illustration-of-guitar-cuban-tres-hat-and-maracas-tropical-vibe-vacation-concept.jpg?s=612x612&w=0&k=20&c=iksBscAlhSpbNMkJOQNpRlzIQB-zoErg8d7yhEDhRWA=" alt="Imagem de pagode" class="playlist-image__img">
+        </li>
       </ul>
     </aside>
+
     <div class="content">
       <h1>Ouça agora as melhores do Samba!</h1>
       <img class="center-image" src="./assets/roda de samba.jpg" alt="Imagem Exemplo">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
+
+    <section id="contact">
+      <h2>Contatos</h2>
+      <ul class="contact-info">
+        <li><i class="fas fa-phone"></i> WhatsApp: (XX) 9XXXX-XXXX</li>
+        <li><i class="far fa-envelope"></i> E-mail: contato@radiodopagode.com</li>
+      </ul>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  
   </div>
-  <script src="script.js"></script>
+
+    <div class="descricao">
+        <h2>Nome da música</h2>
+        <i>nome</i>
+    </div>
+
+  <div class="duracao">
+    <div class="barra">
+        <progress value="0" max="1"></progress>
+        <div class="ponto"></div>
+    </div>
+    <div class="tempo">
+        <p class="inicio">0:00</p>
+        <p class="fim">3:40</p>
+    </div>
+</div>
+<div class="player">
+    <i class="fas fa-step-backward setas anterior"></i>
+    <i class="fas fa-play-circle botao-play"></i>
+    <i class="fas fa-pause-circle botao-pause"></i>
+    <i class="fas fa-step-forward setas proximo"></i>
+</div>
+<audio src="./assets/olha-a-mensagem-a.mp3"></audio>
+  
+<script src="script.js"></script>
 </body>
 </html>
